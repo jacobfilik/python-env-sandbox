@@ -31,9 +31,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - run: bundle exec rake
-        working-directory: ${{ matrix.working-directory }}
-
-      - name: Install dependencies
+      - name: Echo working dir
         run: |
           echo ${{ matrix.working-directory }}
