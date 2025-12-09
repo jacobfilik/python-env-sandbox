@@ -13,7 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - uses: sankichi92/list-changed-directories@v1
         id: list-changed-directories
         with:
@@ -22,8 +21,6 @@ jobs:
   test:
     needs: list-changed-directories
     if: needs.list-changed-directories.outputs.changed-directories != '[]'
-
-    runs-on: ubuntu-latest
 
     strategy:
       matrix:
