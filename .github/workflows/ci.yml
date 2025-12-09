@@ -38,3 +38,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           dry_run: true
           tag_prefix: ${{ matrix.working-directory }}/v
+      - name: echo tag
+        run: |
+          echo ${{ steps.tag_version.outputs.new_tag }}
+          echo ${{ steps.tag_version.outputs.new_version }}
