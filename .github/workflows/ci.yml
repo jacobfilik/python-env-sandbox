@@ -28,9 +28,9 @@ jobs:
     strategy:
       matrix:
         working-directory: ${{ fromJSON(needs.list-changed-directories.outputs.changed-directories) }}
-    uses: ./.github/workflows/_container.yml
-    with:
-      working-directory: ${{ matrix.working-directory }}
+      uses: ./.github/workflows/_container.yml
+      with:
+        working-directory: ${{ matrix.working-directory }}
 
     # steps:
     #   - uses: actions/checkout@v4
