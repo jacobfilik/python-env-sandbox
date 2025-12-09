@@ -39,6 +39,8 @@ jobs:
           dry_run: true
           tag_prefix: ${{ matrix.working-directory }}/v
       - name: echo tag
+        working-directory: ./${{ matrix.working-directory }}
         run: |
+          echo $PWD
           echo ${{ steps.tag_version.outputs.new_tag }}
           echo ${{ steps.tag_version.outputs.new_version }}
