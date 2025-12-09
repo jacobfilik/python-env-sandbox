@@ -28,19 +28,22 @@ jobs:
     strategy:
       matrix:
         working-directory: ${{ fromJSON(needs.list-changed-directories.outputs.changed-directories) }}
+    uses: ./.github/workflows/_container.yml
+    with:
+      working-directory: ${{ matrix.working-directory }}
 
-    steps:
-      - uses: actions/checkout@v4
-      - name: Bump version and push tag
-        id: tag_version
-        uses: mathieudutour/github-tag-action@v6.2
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          dry_run: true
-          tag_prefix: ${{ matrix.working-directory }}/v
-      - name: echo tag
-        working-directory: ./${{ matrix.working-directory }}
-        run: |
-          echo $PWD
-          echo ${{ steps.tag_version.outputs.new_tag }}
-          echo ${{ steps.tag_version.outputs.new_version }}
+    # steps:
+    #   - uses: actions/checkout@v4
+    #   - name: Bump version and push tag
+    #     id: tag_version
+    #     uses: mathieudutour/github-tag-action@v6.2
+    #     with:
+    #       github_token: ${{ secrets.GITHUB_TOKEN }}
+    #       dry_run: true
+    #       tag_prefix: ${{ matrix.working-directory }}/v
+    #   - name: echo tag
+    #     working-directory: ./${{ matrix.working-directory }}
+    #     run: |
+    #       echo $PWD
+    #       echo ${{ steps.tag_version.outputs.new_tag }}
+    #       echo ${{ steps.tag_version.outputs.new_version }}
