@@ -9,6 +9,7 @@ on:
 jobs:
   run:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -18,7 +19,7 @@ jobs:
       env:
         DOCKER_BUILD_RECORD_UPLOAD: false
       with:
-        context: .
+        context: ./${{ inputs.working-directory }}
         # Need load and tags so we can test it below
         load: true
         tags: tag_for_testing
