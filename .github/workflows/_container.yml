@@ -25,7 +25,7 @@ jobs:
         tags: tag_for_testing
 
     - name: Test cli works in cached runtime image
-      run: docker run --rm tag_for_testing --version
+      run: docker run --rm tag_for_testing
 
     - name: Bump version and push tag
       id: tag_version
