@@ -22,4 +22,12 @@ ENV PATH="/app/.venv/bin:$PATH"
 
 WORKDIR /app
 
-CMD ["python", "--version"]
+COPY . .
+
+RUN if [ -f test.py ]; \
+    then echo "#!/bin/bash\npython test.py" >> run.sh; \
+    else echo "#!/bin/bash\npython --version" >> run.sh; \ 
+    fi; \ 
+    chmod +x run.sh;
+
+CMD ["./run.sh"]
