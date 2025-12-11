@@ -2,7 +2,7 @@ FROM ghcr.io/prefix-dev/pixi:noble-cuda-13.0.0 AS build
 
 WORKDIR /app
 COPY . .
-RUN pixi install --locked
+RUN pixi install
 RUN pixi shell-hook -s bash > /shell-hook
 RUN echo "#!/bin/bash" > /app/entrypoint.sh
 RUN cat /shell-hook >> /app/entrypoint.sh
