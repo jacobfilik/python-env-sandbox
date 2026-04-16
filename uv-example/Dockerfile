@@ -8,7 +8,7 @@ WORKDIR /app
 
 COPY pylock.toml pylock.toml
 
-RUN uv venv
+RUN uv venv --python 3.13
 
 RUN uv pip sync pylock.toml
 
