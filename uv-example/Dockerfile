@@ -12,7 +12,7 @@ RUN uv venv --python 3.13
 
 RUN uv pip sync pylock.toml
 
-FROM debian:bookworm-slim
+FROM debian:bookworm
 
 COPY --from=builder /python /python
 
