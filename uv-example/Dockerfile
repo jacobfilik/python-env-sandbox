@@ -24,6 +24,8 @@ WORKDIR /app
 
 COPY . .
 
+RUN apt update; apt install -y qt6-base-dev libxcb-cursor-dev
+
 RUN if [ -f test.py ]; \
     then echo "#!/bin/bash\npython test.py" >> run.sh; \
     else echo "#!/bin/bash\npython --version" >> run.sh; \ 
