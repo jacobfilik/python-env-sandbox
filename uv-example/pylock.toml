@@ -129,6 +129,11 @@ sdist = { url = "https://files.pythonhosted.org/packages/0f/d5/c66da9b79e5bdb124
 wheels = [{ url = "https://files.pythonhosted.org/packages/07/6c/aa3f2f849e01cb6a001cd8554a88d4c77c5c1a31c95bdf1cf9301e6d9ef4/defusedxml-0.7.1-py2.py3-none-any.whl", upload-time = 2021-03-08T10:59:24Z, size = 25604, hashes = { sha256 = "a352e7e428770286cc899e2542b6cdaedb2b4953ff269a210103ec58f6198a61" } }]
 
 [[packages]]
+name = "docopt"
+version = "0.6.2"
+sdist = { url = "https://files.pythonhosted.org/packages/a2/55/8f8cab2afd404cf578136ef2cc5dfb50baa1761b68c9da1fb1e4eed343c9/docopt-0.6.2.tar.gz", upload-time = 2014-06-16T11:18:57Z, size = 25901, hashes = { sha256 = "49b3a825280bd66b3aa83585ef59c4a8c82f2c8a522dbe754a8bc8d08c85c491" } }
+
+[[packages]]
 name = "executing"
 version = "2.2.1"
 sdist = { url = "https://files.pythonhosted.org/packages/cc/28/c14e053b6762b1044f34a13aab6859bbf40456d37d23aa286ac24cfd9a5d/executing-2.2.1.tar.gz", upload-time = 2025-09-01T09:48:10Z, size = 1129488, hashes = { sha256 = "3632cc370565f6648cc328b32435bd120a1e4ebb20c77e3fdde9a13cd1e533c4" } }
@@ -328,11 +333,11 @@ wheels = [{ url = "https://files.pythonhosted.org/packages/82/3d/14ce75ef6681364
 
 [[packages]]
 name = "lxml"
-version = "6.0.4"
-sdist = { url = "https://files.pythonhosted.org/packages/ce/08/1217ca4043f55c3c92993b283a7dbfa456a2058d8b57bbb416cc96b6efff/lxml-6.0.4.tar.gz", upload-time = 2026-04-12T16:28:24Z, size = 4237780, hashes = { sha256 = "4137516be2a90775f99d8ef80ec0283f8d78b5d8bd4630ff20163b72e7e9abf2" } }
+version = "6.1.0"
+sdist = { url = "https://files.pythonhosted.org/packages/28/30/9abc9e34c657c33834eaf6cd02124c61bdf5944d802aa48e69be8da3585d/lxml-6.1.0.tar.gz", upload-time = 2026-04-18T04:32:51Z, size = 4197006, hashes = { sha256 = "bfd57d8008c4965709a919c3e9a98f76c2c7cb319086b3d26858250620023b13" } }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/30/4b/2243260b70974aca9ba0cc71bd668c0c3a79644d80ddcabbfbdb4b131848/lxml-6.0.4-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", upload-time = 2026-04-12T16:24:58Z, size = 5080972, hashes = { sha256 = "0132bb040e9bb5a199302e12bf942741defbc52922a2a06ce9ff7be0d0046483" } },
-    { url = "https://files.pythonhosted.org/packages/7d/63/29a3fa79b8a182f5bd5b5bdcb6f625f49f08f41d60a26ca25482820a1b99/lxml-6.0.4-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-04-12T16:25:06Z, size = 5227480, hashes = { sha256 = "75842801fb48aea73f4c281b923a010dfb39bad75edf8ceb2198ec30c27f01cc" } },
+    { url = "https://files.pythonhosted.org/packages/15/3b/a20aecfab42bdf4f9b390590d345857ad3ffd7c51988d1c89c53a0c73faf/lxml-6.1.0-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.whl", upload-time = 2026-04-18T04:33:34Z, size = 5082162, hashes = { sha256 = "37fabd1452852636cf38ecdcc9dd5ca4bba7a35d6c53fa09725deeb894a87491" } },
+    { url = "https://files.pythonhosted.org/packages/ee/b8/ead7c10efff731738c72e59ed6eb5791854879fbed7ae98781a12006263a/lxml-6.1.0-cp313-cp313-manylinux_2_26_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2026-04-18T04:33:41Z, size = 5228304, hashes = { sha256 = "e69aa6805905807186eb00e66c6d97a935c928275182eb02ee40ba00da9623b2" } },
 ]
 
 [[packages]]
@@ -644,6 +649,12 @@ sdist = { url = "https://files.pythonhosted.org/packages/28/e3/55dcc2cfbc3ca9c29
 wheels = [{ url = "https://files.pythonhosted.org/packages/f1/7b/ce1eafaf1a76852e2ec9b22edecf1daa58175c090266e9f6c64afcd81d91/stack_data-0.6.3-py3-none-any.whl", upload-time = 2023-09-30T13:58:03Z, size = 24521, hashes = { sha256 = "d5558e0c25a4cb0853cddad3d77da9891a08cb85dd9f9f91b9f8cd66e511e695" } }]
 
 [[packages]]
+name = "stomp-py"
+version = "8.2.0"
+sdist = { url = "https://files.pythonhosted.org/packages/bc/66/c07f01feb5fbc669c4333c76eb02fb8149c653c25ba9769477f8427d5e55/stomp_py-8.2.0.tar.gz", upload-time = 2024-10-31T21:59:38Z, size = 39286, hashes = { sha256 = "9908689361e263bf198e6acfb3c4386759fb7df7d141f4384d7414771c68d7fc" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/7b/b6/ebfd6daef0c19a5ca3ac1fb2fc092331d67af5a30c868f106fcc2504c287/stomp_py-8.2.0-py3-none-any.whl", upload-time = 2024-10-31T21:59:36Z, size = 42751, hashes = { sha256 = "fad24e51b505996015a39ca1632df4e0225c1c552980955e21f2aebfc0d9d85c" } }]
+
+[[packages]]
 name = "swmr-tools"
 version = "0.9.0"
 sdist = { url = "https://files.pythonhosted.org/packages/a8/45/dd0e4285d82876a9d6011d6e5bb6bba8cf15fd8f25d3d0a81a058ae61797/swmr_tools-0.9.0.tar.gz", upload-time = 2023-10-26T07:26:02Z, size = 20398, hashes = { sha256 = "c003e0dd54dbde6750d3581725b97757126cc89aef4083c1892d7ad240ec42d5" } }
@@ -721,3 +732,9 @@ name = "websocket-client"
 version = "1.9.0"
 sdist = { url = "https://files.pythonhosted.org/packages/2c/41/aa4bf9664e4cda14c3b39865b12251e8e7d239f4cd0e3cc1b6c2ccde25c1/websocket_client-1.9.0.tar.gz", upload-time = 2025-10-07T21:16:36Z, size = 70576, hashes = { sha256 = "9e813624b6eb619999a97dc7958469217c3176312b3a16a4bd1bc7e08a46ec98" } }
 wheels = [{ url = "https://files.pythonhosted.org/packages/34/db/b10e48aa8fff7407e67470363eac595018441cf32d5e1001567a7aeba5d2/websocket_client-1.9.0-py3-none-any.whl", upload-time = 2025-10-07T21:16:34Z, size = 82616, hashes = { sha256 = "af248a825037ef591efbf6ed20cc5faa03d3b47b9e5a2230a529eeee1c1fc3ef" } }]
+
+[[packages]]
+name = "xraylib"
+version = "4.2.1"
+sdist = { url = "https://files.pythonhosted.org/packages/24/fd/444dc2034012ea33427c5c69d841ec7e8228ddcc7749bd4ed208ef65c638/xraylib-4.2.1.tar.gz", upload-time = 2025-12-21T11:32:44Z, size = 13195127, hashes = { sha256 = "6ec503b1a9d2d0dc56df98c7d5581a76ab487fef9abf3116d18b64752fd4e4ab" } }
+wheels = [{ url = "https://files.pythonhosted.org/packages/5a/f1/c693abf4d3434654020e8555f8561ab34030946a639ebd0c0871f790c3af/xraylib-4.2.1-cp313-cp313-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl", upload-time = 2025-12-21T11:32:12Z, size = 16329187, hashes = { sha256 = "350c73976ca216097ad7f2a06dd0137f492b33d31e944cab8147720a007405f3" } }]
