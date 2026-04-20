@@ -1,3 +1,5 @@
+#Example using pixi and cuda
+
 FROM ghcr.io/prefix-dev/pixi:noble-cuda-13.0.0 AS build
 
 WORKDIR /app
