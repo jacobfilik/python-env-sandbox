@@ -1,3 +1,5 @@
+#Example using UV to build env
+
 FROM ghcr.io/astral-sh/uv:bookworm AS builder
 
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
