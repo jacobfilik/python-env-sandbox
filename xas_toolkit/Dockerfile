@@ -14,6 +14,8 @@ RUN uv venv --python 3.11
 
 RUN cd xas_toolbox && uv pip install .
 
+RUN rm -r xas_toolbox
+
 FROM debian:bookworm
 
 COPY --from=builder /python .python
