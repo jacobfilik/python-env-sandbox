@@ -18,7 +18,7 @@ RUN rm -r xas_toolbox
 
 FROM debian:bookworm
 
-COPY --from=builder /python .python
+COPY --from=builder /python /python
 
 COPY --from=builder /app /app
 
